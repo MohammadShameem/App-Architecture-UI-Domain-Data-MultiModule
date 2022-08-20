@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeActivity">
+
+    <include
+        android:id="@+id/toolBarL"
+        layout="@layout/app_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <!--Fare Category Start-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fareCategoryCl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolBarL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <co.example.assets.CustomBoldTv
+            android:id="@+id/fareCategoryTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/text_body_fare_categories"
+            android:layout_marginStart="@dimen/m16"
+            android:layout_marginTop="@dimen/m8"
+            android:textSize="@dimen/body_1_regular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <RadioGroup
+            android:id="@+id/fareCategoriesRg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="horizontal"
+            android:weightSum="3"
+
+            android:layout_marginStart="@dimen/m16"
+            android:layout_marginEnd="@dimen/m36"
+            android:layout_marginTop="@dimen/m8"
+            android:layout_marginBottom="@dimen/m8"
+            app:layout_constraintTop_toBottomOf="@+id/fareCategoryTitleTv"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <RadioButton
+                android:id="@+id/normalRb"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginEnd="@dimen/m16"
+                style="@style/ChoiceRadioButton"
+                android:checked="true"
+                android:layout_weight="1"
+                android:text="@string/radio_button_normal"
+                />
+
+            <RadioButton
+                android:id="@+id/studentRb"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/m16"
+                style="@style/ChoiceRadioButton"
+                android:text="@string/radio_button_student"/>
+
+            <RadioButton
+                android:id="@+id/specialRb"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/m16"
+                style="@style/ChoiceRadioButton"
+                android:text="@string/radio_buttton_special"/>
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/fareCategoryDividerView"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/m16"
+            android:background="@color/primary_orange_opacity_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fareCategoriesRg"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--Fare Category End-->
+
+    <!--Bus Stoppage Start-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/stoppageListRv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingStart="@dimen/p16"
+        android:paddingTop="@dimen/p16"
+        android:paddingEnd="@dimen/p8"
+        android:paddingBottom="@dimen/p16"
+        tools:listitem="@layout/list_item_stoppage"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="3"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toTopOf="@+id/sellCategoryCl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fareCategoryCl"/>
+    <!--Bus Stoppage End-->
+
+    <!--Sell Category Start-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sellCategoryCl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/syncDividerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <View
+            android:id="@+id/sellCategoryDividerView"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/primary_orange_opacity_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <co.example.assets.CustomBoldTv
+            android:id="@+id/sellCategoryTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/text_body_sell_categories"
+            android:layout_marginStart="@dimen/m16"
+            android:layout_marginTop="@dimen/m8"
+            android:textSize="@dimen/body_1_regular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sellCategoryDividerView" />
+
+        <RadioGroup
+            android:id="@+id/ticketSellRg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/m16"
+            android:layout_marginTop="@dimen/m8"
+            android:layout_marginBottom="@dimen/m8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sellCategoryTitleTv"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <RadioButton
+                android:id="@+id/singleRb"
+                android:layout_width="90dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="@dimen/m16"
+                style="@style/ChoiceRadioButton"
+                android:checked="true"
+                android:text="@string/radio_button_single"
+                />
+
+            <RadioButton
+                android:id="@+id/multipleRb"
+                android:layout_width="90dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="@dimen/m16"
+                style="@style/ChoiceRadioButton"
+                android:text="@string/radio_button_multiple"/>
+
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--Sell Category End-->
+
+    <!--Sync Ticket Section Start-->
+    <View
+        android:id="@+id/syncDividerView"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/primary_orange_opacity_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/syncBottomCL"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/syncBottomCL"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="@dimen/p16">
+
+        <co.example.assets.CustomSemiBoldTV
+            android:id="@+id/totalTicketTitleTv"
+            android:text="@string/text_body_sold_ticket"
+            android:textSize="@dimen/body_2_medium"
+            android:textColor="@color/white_n_gray_light_500"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <co.example.assets.CustomBoldTv
+            android:id="@+id/totalTicketTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/body_1_regular"
+            app:layout_constraintEnd_toEndOf="@+id/totalTicketTitleTv"
+            app:layout_constraintStart_toStartOf="@+id/totalTicketTitleTv"
+            app:layout_constraintTop_toBottomOf="@+id/totalTicketTitleTv"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="5000" />
+
+        <co.example.assets.CustomSemiBoldTV
+            android:id="@+id/totalAmountTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/body_2_medium"
+            android:text="@string/text_body_ticket_fare"
+            android:textColor="@color/white_n_gray_light_500"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <co.example.assets.CustomBoldTv
+            android:id="@+id/totalAmountTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/body_1_regular"
+            app:layout_constraintEnd_toEndOf="@+id/totalAmountTitleTv"
+            app:layout_constraintStart_toStartOf="@+id/totalAmountTitleTv"
+            app:layout_constraintTop_toBottomOf="@+id/totalAmountTitleTv"
+            tools:text="170025" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--Sync Ticket Section End-->
+</androidx.constraintlayout.widget.ConstraintLayout>

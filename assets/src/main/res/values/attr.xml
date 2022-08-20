@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomBtn">
+        <attr name="button_bg_color" format="color"/>
+        <attr name="button_shape_radius" format="integer"/>
+        <attr name="button_stroke_color" format="color"/>
+        <attr name="button_stroke_width" format="integer"/>
+        <attr name="button_ripple_color" format="color"/>
+        <attr name="button_disable_color" format="color"/>
+        <attr name="button_shape">
+            <flag name="stroke" value="1"/>
+            <flag name="rectangle" value="2"/>
+            <flag name="oval" value="3"/>
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="CustomInputLayout">
+        <attr name="validation_type">
+            <flag name="phone" value="1"/>
+            <flag name="email" value="2"/>
+            <flag name="password" value="3"/>
+        </attr>
+        <attr name="realtime_validation_enable" format="boolean"/>
+    </declare-styleable>
+
+</resources>

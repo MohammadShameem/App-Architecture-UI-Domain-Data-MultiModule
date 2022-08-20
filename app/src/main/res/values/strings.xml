@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_body_sold_ticket">Total Sold Ticket</string>
+    <string name="text_body_ticket_fare">Total Ticket Fare</string>
+    <string name="text_body_sell_categories">Sell Categories</string>
+    <string name="radio_button_single">Single</string>
+    <string name="radio_button_multiple">Multiple</string>
+    <string name="text_body_fare_categories">Fare Categories</string>
+    <string name="radio_button_normal">Normal</string>
+    <string name="radio_button_student">Student</string>
+    <string name="radio_buttton_special">Special</string>
+    <string name="home">Home</string>
+    <string name="fare">৳ %d</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="msg_want_to_print_report">Do you want to print report?</string>
+    <string name="title_report_print_alert">Report Print Alert!</string>
+    <string name="msg_sync_sold_ticket">Please sync sold ticket first</string>
+
+    <string name="title_multiple_ticket">Multiple Ticket Print</string>
+    <string name="input_ticket_number">Enter Ticket Number</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_print">Print</string>
+    <string name="printing_ticket_please_wait">Printing ticket. Please wait…</string>
+    <string name="btn_reconnect">RE-CONNECT</string>
+    <string name="error_message_time_zone">Please enable automatic time zone</string>
+    <string name="msg_your_device_does_not_support_bluetooth">Your device doesn\'t support bluetooth</string>
+    <string name="msg_please_connect_printer">Please Connect Printer!!</string>
+    <string name="msg_no_ticket_format">Don\'t have any ticket format</string>
+</resources>

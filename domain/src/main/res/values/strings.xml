@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="message_invalid_phone">দশ/এগারো সংখ্যার মোবাইল নাম্বার দিন</string>
+    <string name="message_invalid_password">সঠিক পাসওয়ার্ড দিন</string>
+
+    <string name="enter_min_password">সর্বনিম্ন ৬ সংখ্যার পাসওয়ার্ড লিখুন</string>
+    <string name="password_not_match">পাসওয়ার্ড মেলেনি</string>
+
+
+</resources>

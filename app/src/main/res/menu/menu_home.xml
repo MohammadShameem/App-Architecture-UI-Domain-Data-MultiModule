@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/ic_more_hor_white"
+        app:showAsAction="ifRoom"
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/actionPrintReport"
+                android:title="@string/print_report"
+                android:icon="@drawable/ic_baseline_print_24"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/actionSettings"
+                android:title="@string/settings"
+                android:icon="@drawable/ic_settings_black"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/actionDashBoard"
+                android:title="@string/dash_board"
+                android:icon="@drawable/ic_history_black_24dp"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/actionProfile"
+                android:title="@string/profile"
+                android:icon="@drawable/ic_account_circle_black_24dp"
+                app:showAsAction="ifRoom" />
+
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/p16"
+        android:paddingEnd="@dimen/p16">
+
+        <co.example.assets.CustomBoldTv
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/title_multiple_ticket"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ticketNumberTextInputL"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="true"
+            app:boxStrokeColor="@color/primary_orange"
+            app:hintTextColor="@color/primary_orange"
+            android:layout_marginTop="@dimen/m16"
+            app:layout_constraintTop_toBottomOf="@+id/titleTv">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ticketNumberEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/input_ticket_number"
+                android:inputType="number"
+                android:textColor="@color/primary_orange"
+                android:textCursorDrawable="@null"
+                android:maxLength="2"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <co.example.assets.CustomTV
+            android:id="@+id/cancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/p16"
+            android:text="@string/button_cancel"
+            android:textColor="@color/red"
+            android:textSize="@dimen/body_1_regular"
+            app:layout_constraintBottom_toBottomOf="@+id/printBtn"
+            app:layout_constraintEnd_toStartOf="@+id/printBtn"
+            app:layout_constraintTop_toTopOf="@+id/printBtn" />
+
+        <co.example.assets.CustomBtn
+            android:id="@+id/printBtn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/m16"
+            android:text="@string/button_print"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            android:textSize="@dimen/body_1_regular"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ticketNumberTextInputL" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

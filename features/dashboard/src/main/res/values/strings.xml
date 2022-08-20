@@ -1,0 +1,12 @@
+<resources>
+    <string name="unsync_ticket_title">UnSync Ticket</string>
+    <string name="total_sold_ticket_title">Total Sold Ticket</string>
+    <string name="total_ticket_fare_title">Total Ticket Fare</string>
+    <string name="sync_ticket_title">Sync Ticket</string>
+    <string name="total_collectable_amount_title">Total Collectable Amount</string>
+    <string name="app_name_about">App Name :</string>
+    <string name="dashboard_title">Dashboard</string>
+    <string name="ticket_count"> %d</string>
+    <string name="ticket_fare">৳ %d</string>
+    <string name="error_message">Opps! Error happened or You have no internet connection</string>
+</resources>

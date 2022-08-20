@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="h1">96sp</dimen>
+    <dimen name="h2">60sp</dimen>
+    <dimen name="h3">48sp</dimen>
+    <dimen name="h4">34sp</dimen>
+    <dimen name="h5">24sp</dimen>
+    <dimen name="h6">18sp</dimen>
+    <dimen name="subtitle_1_regular">16sp</dimen>
+    <dimen name="subtitle_2_medium">14sp</dimen>
+    <dimen name="button_font">14sp</dimen>
+    <dimen name="regular_font">14sp</dimen>
+    <dimen name="input_form_font">16sp</dimen>
+    <dimen name="body_1_regular">16sp</dimen>
+    <dimen name="body_2_medium">14sp</dimen>
+    <dimen name="caption">12sp</dimen>
+    <dimen name="error">12sp</dimen>
+    <dimen name="small_10sp">10sp</dimen>
+    <dimen name="small">8sp</dimen>
+
+    <dimen name="p18">18dp</dimen>
+    <dimen name="p16">16dp</dimen>
+    <dimen name="p12">12dp</dimen>
+    <dimen name="p8">8dp</dimen>
+    <dimen name="p4">4dp</dimen>
+    <dimen name="p2">2dp</dimen>
+
+    <dimen name="m140">140dp</dimen>
+    <dimen name="m72">72dp</dimen>
+    <dimen name="m40">40dp</dimen>
+    <dimen name="m34">34dp</dimen>
+    <dimen name="m32">32dp</dimen>
+    <dimen name="m20">20dp</dimen>
+    <dimen name="m16">16dp</dimen>
+    <dimen name="m12">12dp</dimen>
+    <dimen name="m10">10dp</dimen>
+    <dimen name="m8">8dp</dimen>
+    <dimen name="m5">5dp</dimen>
+    <dimen name="m2">2dp</dimen>
+
+    <dimen name="m50">50dp</dimen>
+    <dimen name="m56">56dp</dimen>
+    <dimen name="m64">64dp</dimen>
+    <dimen name="m46">46dp</dimen>
+    <dimen name="m36">36dp</dimen>
+    <dimen name="m24">24dp</dimen>
+    <dimen name="m4">4dp</dimen>
+
+</resources>

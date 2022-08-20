@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Developed by Kamrul Hasan on 6/28/19 6:09 PM
+  ~ Last modified 6/28/19 6:09 PM
+  ~ Copyright (c) 2019. All rights reserved
+  ~ Email : kamrulhasan3288@gmail.com
+  -->
+
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <translate
+        android:duration="@android:integer/config_mediumAnimTime"
+        android:fromXDelta="100%p"
+        android:toXDelta="0" />
+</set>

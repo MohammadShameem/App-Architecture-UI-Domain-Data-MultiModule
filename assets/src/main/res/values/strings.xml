@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IntraCityCounter-AutoSync</string>
+    <string name="title_no_data_found">No data found</string>
+
+    <!--Login screen-->
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="login">Login</string>
+    <string name="give_ten_or_eleven_numbers">Enter Eleven Digit</string>
+    <string name="give_right_phone_number">Enter Right Number</string>
+    <string name="give_right_password">Enter Right Password</string>
+
+    <!--Home Text-->
+    <string name="boarding_point">Boarding Points</string>
+    <string name="home">Home</string>
+    <string name="yes_text">Yes</string>
+    <string name="no_text">No</string>
+
+    <!--More Fragment Text-->
+    <string name="about_us">About Us</string>
+
+    <!--History Text-->
+    <string name="confirm">Confirm</string>
+    <string name="confirmed">Confirmed</string>
+
+    <!-- error -->
+    <string name="no_internet_connection">No Internet Connection!</string>
+    <string name="retry">Retry</string>
+
+    <!--Menu item-->
+    <string name="dash_board">Dashboard</string>
+
+    <string name="about">About</string>
+
+    <string name="settings">Settings</string>
+    <string name="print_report">Print Report</string>
+
+
+    <string name="print">Print</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter_mobile">Enter Mobile</string>
+    <string name="enter_fare">Enter Fare</string>
+    <string name="special_fare">Special Fare</string>
+    <string name="empty_field">Amount can\'t be empty</string>
+    <string name="enter_phone_number">Please Enter Phone Number</string>
+    <string name="invalid_number">Invalid phone number</string>
+    <string name="please_give_valid_input">Please give valid input</string>
+    <string name="allowed_ticket_count">Max 65 is Allowed</string>
+    <string name="msg_lowest_ticket_count">Ticket quantity should be more than 1</string>
+
+    <!--Profile Activity-->
+    <string name="profile">Profile</string>
+    <string name="reset_config">Reset Config</string>
+    <string name="msg_are_you_sure">Are you sure?</string>
+    <string name="secondary_phone_title">Secondary Phone</string>
+    <string name="logout">Logout</string>
+    <string name="secondary_phone">Secondary Phone</string>
+    <string name="gender">Gender</string>
+    <string name="app_info">App Info</string>
+    <string name="stoppage">Stoppage</string>
+</resources>

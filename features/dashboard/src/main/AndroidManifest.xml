@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.example.dashboard">
+
+    <application>
+        <activity
+            android:name="co.example.dashboard.DashboardActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode"/>
+    </application>
+
+</manifest>

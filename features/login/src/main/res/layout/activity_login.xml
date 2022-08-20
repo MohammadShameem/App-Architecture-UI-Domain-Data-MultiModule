@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iamkamrul.library.ViewStateConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:id="@+id/logoIV"
+        android:layout_width="180dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="@dimen/m16"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_app_logo"
+        app:layout_constraintBottom_toTopOf="@+id/phoneNumberTIL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <co.example.assets.CustomInputLayout
+        android:id="@+id/phoneNumberTIL"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/m12"
+        android:layout_marginHorizontal="@dimen/m16"
+        android:hint="@string/enter_mobile_number"
+        app:validation_type="phone"
+        app:realtime_validation_enable="true"
+        app:counterMaxLength="11"
+        app:counterEnabled="true"
+        app:errorEnabled="true"
+        app:prefixTextColor="@color/primary_orange"
+        app:endIconMode="clear_text"
+        app:errorTextColor="@color/red"
+        app:errorIconDrawable="@color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/passwordTIL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoIV"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phoneNumberET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="@dimen/subtitle_2_medium" />
+
+    </co.example.assets.CustomInputLayout>
+
+    <co.example.assets.CustomInputLayout
+        android:id="@+id/passwordTIL"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/m12"
+        android:hint="@string/enter_password"
+        app:validation_type="password"
+        app:realtime_validation_enable="true"
+        app:counterMaxLength="20"
+        app:counterEnabled="true"
+        app:errorEnabled="true"
+        app:endIconMode="password_toggle"
+        app:errorTextColor="@color/red"
+        app:errorIconDrawable="@color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/loginBtnFrame"
+        app:layout_constraintEnd_toEndOf="@+id/phoneNumberTIL"
+        app:layout_constraintStart_toStartOf="@+id/phoneNumberTIL"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberTIL">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="@dimen/subtitle_2_medium" />
+
+    </co.example.assets.CustomInputLayout>
+
+    <FrameLayout
+        android:id="@+id/loginBtnFrame"
+        android:elevation="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/m24"
+        android:layout_marginEnd="16dp"
+        android:layout_width="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTIL"
+        android:layout_height="wrap_content">
+
+        <co.example.assets.CustomBtn
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:button_bg_color="@color/primary_orange"
+            app:button_shape="rectangle"
+            app:button_shape_radius="15"
+            app:button_ripple_color="@color/primary_orange_light_400"
+            app:button_stroke_width="20" />
+
+    </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginBtnFrame" />
+
+</com.iamkamrul.library.ViewStateConstraintLayout>
+

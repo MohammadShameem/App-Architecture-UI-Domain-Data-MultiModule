@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.example.profile">
+
+    <application>
+        <activity
+            android:name="co.example.profile.ProfileActivity"
+            android:exported="false"
+            android:configChanges="uiMode"/>
+    </application>
+
+</manifest>
