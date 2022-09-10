@@ -2,6 +2,7 @@
 <com.iamkamrul.library.ViewStateConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_constraintEnd_toEndOf="parent"
@@ -15,13 +16,13 @@
         android:layout_marginBottom="@dimen/m16"
         android:contentDescription="@string/app_name"
         android:scaleType="centerCrop"
-        android:src="@drawable/ic_app_logo"
         app:layout_constraintBottom_toTopOf="@+id/phoneNumberTIL"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.575"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:src="@tools:sample/avatars" />
 
     <co.example.assets.CustomInputLayout
         android:id="@+id/phoneNumberTIL"
